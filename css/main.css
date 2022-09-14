@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    max-width: 1500px;
+    color: #222;
+}
+header {
+    background: #eee;
+    width: 100%;
+    padding: 15px 20px 0 20px;
+    height: 44.625rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.header__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.header__header > img {
+    width: 95px;
+    height: 24px;
+}
+nav > ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+li > a {
+    color: #999;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 10px 25px;
+    letter-spacing: 1.7%;
+    text-align: center;
+    white-space: nowrap;
+}
+li > a:hover {
+    text-decoration: underline;
+    color: rgb(95, 95, 95);
+}
+li > .nav__text--current-page:hover {
+    text-decoration: none;
+    cursor:default;
+    color: #222;
+}
+
+.nav__text--current-page {
+    color: #222;
+}
+.btn-quote {
+    font-family: 'Fira sans', sans-serif;
+    border-radius: 3px;
+    background: transparent;
+    width: 9.125rem;
+    height: 40px;
+    border: 1px solid #222;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 0.75rem;
+}
+.btn-quote:hover {
+    background: #222;
+    border: 1px solid ;
+    color: #eee;
+}
+h1 {
+    font-weight: 700;
+    font-size: 3.3125rem;
+    line-height: 63.6px;
+    margin-bottom: 0;
+    color: #222;
+    text-align: center;
+    cursor: default;
+}
+header > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgb(22 22 22 / .8);
+    max-width: 34.625rem;
+    margin: 0.5rem;
+    cursor: default;
+}
+.header__btn-container {
+    display: flex;
+    flex-direction: row;
+    margin: 2.6rem 0;
+    justify-content: space-between;
+    width: 18.75rem;
+
+}
+.btn-download {
+    background: #222;
+    border: none;
+    color: white;
+    font-family: 'Fira sans';
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 7.5px 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 8.375rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.btn-download:hover {
+    background: #343332;
+}
+.btn-download > img {
+    margin-right: 9px;
+}
+.phone-img {
+    margin-top: auto;
+}
+
+main {
+    padding-top: 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background: #fff;
+    height: 150vh;
+}
+
+.grid-container {
+    margin-top: 5rem;
+    display: grid;
+    min-width: 80%;
+    max-width: 1138px;
+    height: 600px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-template-rows: 23.9375rem 21.8125rem;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 5rem;
+}
+
+.grid-item {
+    border-radius: 3px;   
+    cursor: default;
+}
+.product {
+    grid-row: auto / span 1;
+    grid-column: auto / span 1;
+    background: #ebebeb;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.collection {
+    grid-row: 2 / 3;
+    grid-column: auto / span 2;
+    background: #343332;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.product > img {
+    width: 100%;
+}
+.product > h3 {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.product > p {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+.grid-container > :nth-child(1) {
+    background: #f1f1f1;
+    padding-top: 4rem;
+}
+.grid-container > :nth-child(2) {
+    background: #fbfbfb;
+}
+.grid-container > :nth-child(3) {
+    background: #f6f6f6;
+    padding-top: 6rem;
+}
+.grid-container > :nth-child(4) {
+    background: #f2f2f2;
+}
+
+.collection > h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0;
+}
+.collection > h4 {
+    color: #aeadad;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+}
+.collection__btn {
+    margin-top: 1.5rem;
+    color: #aeadad;
+    border: 1px solid #aeadad;
+    border-radius: 3px;
+    background: transparent;
+    font-family: 'Fira sans', sans-serif;
+    padding: 0.7rem 2.25rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+.collection__btn:hover {
+    background: #222;
+}
+
+footer {
+    background-image: url('../img/footer-map.png');
+    background-color: #343332;
+    background-size: cover;
+    width: 100%;
+    height: 556px;
+    position: relative;
+}
+.footer__contact {
+    background: #fff;
+    border-radius: 3px;
+    max-width: 27.125rem;
+    padding: 2.1rem;
+    text-align: left;
+    position: absolute;
+    right: 13.25rem;
+    bottom: 4.35rem;
+    margin-top: 1rem;
+    cursor: default;
+}
+.footer__contact > h1 {
+    text-align: left;
+    margin-top: 0;
+}
+.footer__contact > h3 {
+    font-size: 1.375rem ;
+    color: rgb(22 22 22 / .8);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+.footer__contact > p {
+    color: rgb(34 34 34 / .6);
+    font-size: 0.875rem;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    line-height: 1.3125rem;
+}
+.footer__contact > ul {
+    margin-bottom: 2.4rem;
+    list-style: none;
+    padding-left: 0;
+}
+.footer__contact > ul > li > p {
+    font-size: 0.875rem;
+    padding-bottom: 0.5rem;
+    cursor: auto;
+}
+i {
+    width: 18px;
+    height: 18px;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    padding-bottom: 0;
+    transform: translateY(0.25rem);
+}
+p > span {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .header__header, nav > ul  {
+        flex-flow: column nowrap;
+    }
+    li > a {
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+        white-space: nowrap;
+    }
+    header ul > li {
+        text-align: center;
+        padding: 0.4rem;
+    }
+    .btn-quote {
+        margin: 0;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .footer__contact {
+        right: auto;
+        bottom: auto;
+        margin: 4rem 0 0 2rem;
+    }
+}
